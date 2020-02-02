@@ -1,0 +1,44 @@
+name_1 = input ("What's your first and last name? ")
+name_2 = input ("What's your partner's first and last name? ")
+
+space_1 = name_1.find(" ")
+space_2 = name_2.find(" ")
+first_name_1 = name_1[0:space_1]
+last_name_1 = name_1[space_1+1:len(name_1)]
+first_name_2 = name_2 [0:space_2]
+last_name_2 = name_2 [space_2+1:len(name_2)]
+
+#finding the midpoint of each name
+index_first_name_1 = len(first_name_1)/2
+index_first_name_1 = int(index_first_name_1)
+index_last_name_1 = len(last_name_1)/2
+index_last_name_1 = int(index_last_name_1)
+index_first_name_2 = len(first_name_2)/2
+index_first_name_2 = int(index_first_name_2)
+index_last_name_2 = len(last_name_2)/2
+index_last_name_2 = int(index_last_name_2)
+
+#separating the names into halves and storing as variables
+left_half_first_name_1 = first_name_1[0:index_first_name_1]
+right_half_first_name_1 = first_name_1[index_first_name_1+1:len(first_name_1)]
+left_half_last_name_1 = last_name_1[0:index_last_name_1]
+right_half_last_name_1 = last_name_1[index_last_name_1+1:len(last_name_1)]
+left_half_first_name_2 = first_name_2[0:index_first_name_2]
+right_half_first_name_2 = first_name_2[index_first_name_2+1:len(first_name_2)]
+left_half_last_name_2 = last_name_2[0:index_last_name_2]
+right_half_last_name_2 = last_name_2[index_last_name_2+1:len(last_name_2)]
+
+#combining halves to make new names
+new_first_name_1 = left_half_first_name_1.capitalize()\
+ + right_half_first_name_2.lower()
+new_last_name_1 = left_half_last_name_1.capitalize()\
+ + right_half_last_name_2.lower()
+new_first_name_2 = left_half_first_name_2.capitalize()\
+ +right_half_first_name_1.lower()
+new_last_name_2 = left_half_last_name_2.capitalize()\
+ + right_half_last_name_1.lower()
+ 
+print("Here are two possibilities for mashed names. \
+Pick whichever you prefer!")
+print(new_first_name_1, new_last_name_1)
+print(new_first_name_2, new_last_name_2)
