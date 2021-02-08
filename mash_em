@@ -1,3 +1,7 @@
+# Name    : Name masher
+# Purpose : Combine two user-input names
+# Author  : JG
+
 name_1 = input ("What's your first and last name? ")
 name_2 = input ("What's your partner's first and last name? ")
 
