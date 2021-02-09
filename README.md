@@ -1,2 +1,2 @@
 # Name masher basic python script
-Basic python script to combine two user-input names 
+Splits and recombines two user-input names 
